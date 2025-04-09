@@ -6,7 +6,7 @@ A modern portfolio app inspired by the Ubuntu desktop environment. This app show
 
 ### Live Demo:
 
-[Check out the live version here!](https://ubuntu-portfolio-two.vercel.app/)
+[Check out the live version here!](https://keshav-ubuntu-portfolio.vercel.app/)
 
 ## ✨ Features
 
@@ -41,7 +41,7 @@ Ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/keshavjatt/ubuntu-portfolio.git
+   git clone https://github.com/keshavjatt/Ubuntu-Portfolio
    cd ubuntu-portfolio
    ```
 
@@ -102,6 +102,6 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 Feel free to reach out to me if you have any questions or suggestions:
 
-- **Portfolio**: [https://keshavjatt.vercel.app/](https://keshavjatt.vercel.app/)
-- **Email**: [keshavjatt@gmail.com](mailto:keshavjatt@gmail.com)
+- **Portfolio**: [https://keshav-ubuntu-portfolio.vercel.app/](https://keshav-ubuntu-portfolio.vercel.app/)
+- **Email**: [thecoder780@gmail.com](thecoder780@gmail.com])
 - **GitHub**: [@keshavjatt](https://github.com/keshavjatt)
