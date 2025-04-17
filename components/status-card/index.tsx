@@ -17,12 +17,18 @@ import {
   setSoundLevel,
 } from '@/redux/features/status-slice';
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
+import { useBatteryStatus } from '@/hooks/useBatteryStatus'; // 👈 Import custom battery hook
 
 interface StatusCardProps {}
 
 const StatusCard = ({}: StatusCardProps) => {
   const dispatch = useAppDispatch();
   const status = useAppSelector((state) => state.status);
+  const battery = useBatteryStatus(); // 👈 Hook use karo
+
+  const batteryLevelPercent = Math.round(battery.level * 100);
+  const isLow = batteryLevelPercent < 20;
+  const isCharging = battery.charging;
 
   return (
     <div className="absolute right-0 top-8 w-72 rounded-md border border-black border-opacity-20 bg-gray-900 p-1.5 shadow">
@@ -42,7 +48,9 @@ const StatusCard = ({}: StatusCardProps) => {
         <Slider
           onChange={(e: FormEvent<HTMLInputElement>) =>
             dispatch(
-              setBrightnessLevel(Number((e.target as HTMLInputElement).value)),
+              setBrightnessLevel(
+                Number((e.target as HTMLInputElement).value),
+              ),
             )
           }
           value={status.brightnessLevel}
@@ -63,9 +71,25 @@ const StatusCard = ({}: StatusCardProps) => {
             <p className="p-1 px-5 hover:bg-slate-700">Bluetooth Settings</p>
           </div>
         </Accordion>
-        <Accordion title="2:55 Remaining (80%)" icon={<Battery />}>
+        <Accordion
+          title={`${isCharging ? 'Charging' : 'Remaining'} (${batteryLevelPercent}%)`}
+          icon={
+            <Battery
+              className={
+                isLow
+                  ? 'text-orange-400'
+                  : isCharging
+                  ? 'text-green-400'
+                  : 'text-white'
+              }
+            />
+          }
+        >
           <div className="">
             <p className="p-1 px-5 hover:bg-slate-700">Power Settings</p>
+            <p className="p-1 px-5 hover:bg-slate-700">
+              Status: {isCharging ? 'Charging ⚡' : 'Discharging 🔋'}
+            </p>
           </div>
         </Accordion>
       </div>
