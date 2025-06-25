@@ -14,10 +14,10 @@ export const useBatteryStatus = () => {
         console.warn('Battery API not supported on this browser.');
         return;
       }
-  
+
       const battery: any = await (navigator as any).getBattery();
       if (!battery) return;
-  
+
       const updateBatteryInfo = () => {
         const info = {
           charging: battery.charging,
@@ -28,20 +28,20 @@ export const useBatteryStatus = () => {
         console.log('🔋 Updated Battery Info:', info);
         setBatteryInfo(info);
       };
-  
+
       updateBatteryInfo();
-  
+
       battery.addEventListener('chargingchange', updateBatteryInfo);
       battery.addEventListener('levelchange', updateBatteryInfo);
-  
+
       return () => {
         battery.removeEventListener('chargingchange', updateBatteryInfo);
         battery.removeEventListener('levelchange', updateBatteryInfo);
       };
     };
-  
+
     getBattery();
-  }, []);  
+  }, []);
 
   return batteryInfo;
 };

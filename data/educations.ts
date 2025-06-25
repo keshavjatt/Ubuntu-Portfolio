@@ -4,7 +4,8 @@ export const educations = [
   {
     id: _.uniqueId(),
     timeLine: 'Pursuing',
-    degree: 'Bachelor of Technology (B.Tech) in Computer Science and Engineering',
+    degree:
+      'Bachelor of Technology (B.Tech) in Computer Science and Engineering',
     school: 'J.S. University',
     location: 'Shikohabad Rd, Shikohabad, Uttar Pradesh 283135',
     gpa: 'In Progress',

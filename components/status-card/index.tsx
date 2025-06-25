@@ -48,9 +48,7 @@ const StatusCard = ({}: StatusCardProps) => {
         <Slider
           onChange={(e: FormEvent<HTMLInputElement>) =>
             dispatch(
-              setBrightnessLevel(
-                Number((e.target as HTMLInputElement).value),
-              ),
+              setBrightnessLevel(Number((e.target as HTMLInputElement).value)),
             )
           }
           value={status.brightnessLevel}
@@ -72,7 +70,9 @@ const StatusCard = ({}: StatusCardProps) => {
           </div>
         </Accordion>
         <Accordion
-          title={`${isCharging ? 'Charging' : 'Remaining'} (${batteryLevelPercent}%)`}
+          title={`${
+            isCharging ? 'Charging' : 'Remaining'
+          } (${batteryLevelPercent}%)`}
           icon={
             <Battery
               className={
