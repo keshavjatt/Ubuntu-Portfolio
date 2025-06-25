@@ -3,7 +3,7 @@ import _ from 'lodash';
 export const educations = [
   {
     id: _.uniqueId(),
-    timeLine: 'Present',
+    timeLine: 'Pursuing',
     degree: 'Bachelor of Technology (B.Tech) in Computer Science and Engineering',
     school: 'J.S. University',
     location: 'Shikohabad Rd, Shikohabad, Uttar Pradesh 283135',

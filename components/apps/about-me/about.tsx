@@ -6,7 +6,7 @@ const About = () => {
     <div className="flex flex-col items-center justify-center">
       <div className="my-4 w-20  md:w-28">
         <Image
-          src="/myImage.jpg"
+          src="/myImage.png"
           alt="Keshav"
           className="w-full rounded-full"
           height={300}

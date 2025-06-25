@@ -3,7 +3,7 @@ import _ from 'lodash';
 export const experience = [
   {
     id: _.uniqueId(),
-    timeline: 'Aug 2024 - Present',
+    timeline: 'Aug 2024 - Jun 2025',
     company: 'Indira Gandhi Computer Saksharta Mission',
     url: '',
     position: 'Web Developer',
