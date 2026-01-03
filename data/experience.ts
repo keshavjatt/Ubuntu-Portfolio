@@ -6,7 +6,7 @@ export const experience = [
     timeline: 'Aug 2024 - Jun 2025',
     company: 'Indira Gandhi Computer Saksharta Mission',
     url: '',
-    position: 'Web Developer',
+    position: 'Full Stack Developer',
     location: 'India',
     description: [
       'Developed Websites for ITI and Polytechnic Institutions, ensuring user-friendly design and responsive interfaces.',
@@ -14,11 +14,11 @@ export const experience = [
       'Built REST APIs using Node.js for seamless functionality.',
     ],
     tools: [
-      'React JS',
+      'Next.js',
       'Node JS',
       'Express JS',
       'MongoDB',
-      'React Native',
+      'React Native Expo',
       'Alma Linux Server',
       'Swagger',
     ],

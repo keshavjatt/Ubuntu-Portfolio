@@ -4,9 +4,9 @@ const About = () => {
   const yearsOfExperience = new Date().getFullYear() - 2021;
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="my-4 w-20  md:w-28">
+      <div className="my-4 w-20 md:w-28">
         <Image
-          src="/myImage.png"
+          src="/keshav_pic.jpeg"
           alt="Keshav"
           className="w-full rounded-full"
           height={300}
@@ -20,47 +20,36 @@ const About = () => {
         <div className="ml-1 font-normal">
           A passionate{' '}
           <span className="font-bold text-orange-600">
-            Software Engineer 💻✨
+            AI/ML Engineer 🤖🧠
           </span>{' '}
         </div>
       </div>
       <ul className="emoji-list mt-4 w-5/6 text-sm leading-tight tracking-tight md:w-3/4 md:text-base">
         <li className="list-alumnus">
-          I’m a <span className="font-medium">Software Engineer 🤓</span>{' '}
-          specialized in the{' '}
-          <span className="font-medium">Node.js/React.js ecosystem</span> with
+          I&apos;m a <span className="font-medium">Computer Science student</span>{' '}
+          and{' '}
+          <span className="font-medium">AI/ML Enthusiast</span> with hands-on
+          experience in{' '}
           <span className="text-orange-600">
-            {' '}
-            {yearsOfExperience}+ years of professional experience
+            end-to-end machine learning projects 🚀
           </span>
-          . I am committed to continuously enhancing my skills to effectively
-          solve{' '}
-          <span className="text-orange-600">
-            real-world problems through technology 🌍
-          </span>
-          . Here are my key specializations:
+          . I specialize in developing intelligent solutions from data processing
+          to deployment. Here are my key specializations:
           <ul className="mt-2 list-inside list-disc">
             <li>
-              <span className="text-orange-600">
-                JavaScript Stack Advocate:
-              </span>{' '}
-              Specializing in JavaScript with a willingness to learn additional
-              languages.
+              <span className="text-orange-600">Interactive AI Applications:</span>{' '}
+              Proficient in creating user-friendly web interfaces with Streamlit 
+              for ML model deployment and visualization.
             </li>
             <li>
-              <span className="text-orange-600">Continuous Improvement:</span>{' '}
-              Committed to learning and adapting to new technologies.
+              <span className="text-orange-600">Deep Learning Specialist:</span>{' '}
+              Skilled in CNN architectures for computer vision tasks including 
+              medical image classification and analysis.
             </li>
             <li>
-              <span className="text-orange-600">
-                Passionate about Innovation:
-              </span>{' '}
-              Enjoy working with the latest tools to develop innovative
-              solutions.
-            </li>
-            <li>
-              <span className="text-orange-600">Problem Solver at Heart:</span>{' '}
-              Embrace challenges that push me to grow and improve 💪.
+              <span className="text-orange-600">Database Integration:</span>{' '}
+              Experienced with SQL and NoSQL databases for efficient data 
+              management in ML applications.
             </li>
           </ul>
         </li>

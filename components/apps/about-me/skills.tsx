@@ -1,6 +1,6 @@
 import cls from 'classnames';
 
-import { frontend, backend, databaseCloud } from '@/data/skills';
+import { pythonStack, mlTools, deploymentTools, databases } from '@/data/skills';
 
 interface SectionProps {
   title: string;
@@ -10,12 +10,27 @@ interface SectionProps {
 }
 
 const Section = ({ title, gradientFrom, gradientTo, items }: SectionProps) => {
+  // Define gradient classes based on the section
+  const getGradientClass = (from: string, to: string) => {
+    if (from === "rgb(76,175,80)" && to === "rgb(139,195,74)") {
+      return "bg-gradient-to-r from-green-500 to-green-400";
+    } else if (from === "rgb(255,87,34)" && to === "rgb(255,193,7)") {
+      return "bg-gradient-to-r from-orange-500 to-yellow-400";
+    } else if (from === "rgb(33,150,243)" && to === "rgb(3,169,244)") {
+      return "bg-gradient-to-r from-blue-500 to-cyan-400";
+    } else if (from === "rgb(156,39,176)" && to === "rgb(233,30,99)") {
+      return "bg-gradient-to-r from-purple-600 to-pink-500";
+    }
+    return "bg-gradient-to-r from-blue-500 to-cyan-400";
+  };
+
   return (
     <div>
       <div
         className={cls(
           'mb-2 text-xl font-extrabold text-transparent md:text-center',
-          `bg-gradient-to-r from-[${gradientFrom}] to-[${gradientTo}] bg-clip-text`,
+          getGradientClass(gradientFrom, gradientTo),
+          'bg-clip-text'
         )}
       >
         {title}
@@ -41,65 +56,72 @@ const Skills = () => {
     <div className="flex flex-col items-center justify-center">
       <div className="p-5">
         <div className="mb-10 text-center text-2xl font-bold text-orange-600 md:text-3xl">
-          Skills
+          Skills & Technologies
         </div>
         <div className="-my-6">
           <ul className="mt-2 list-inside list-disc">
             <li>
-              🚀 My strong focus is on
-              <span className="text-orange-600"> TypeScript</span>,{' '}
-              <span className="text-orange-600"> React</span> , and{' '}
-              <span className="text-orange-600"> Node.js</span>.
+              🚀 My primary expertise lies in{' '}
+              <span className="text-orange-600">Python</span> for{' '}
+              <span className="text-orange-600">Machine Learning</span> and{' '}
+              <span className="text-orange-600">Data Science</span>.
             </li>
             <li>
-              ⚡ I thrive in creating{' '}
-              <span className="text-orange-600"> dynamic</span>,
-              <span className="text-orange-600">
-                {' '}
-                high-performance web applications
-              </span>
-              .
+              ⚡ I specialize in building{' '}
+              <span className="text-orange-600">end-to-end ML pipelines</span>,
+              from data preprocessing to model deployment.
             </li>
             <li>
-              🧑‍💻 I emphasize writing
-              <span className="text-orange-600"> clean code </span>
-              and creating{' '}
-              <span className="text-orange-600">
-                {' '}
-                intuitive user experiences
-              </span>
-              .
+              🧠 Proficient in{' '}
+              <span className="text-orange-600">deep learning</span> with{' '}
+              <span className="text-orange-600"> TensorFlow/Keras</span> for
+              computer vision and neural network applications.
             </li>
             <li>
-              🔄 With a solid background in both{' '}
-              <span className="text-orange-600"> frontend </span> and{' '}
-              <span className="text-orange-600"> backend development</span>, I
-              enjoy tackling challenges across the{' '}
-              <span className="text-orange-600">full tech stack</span>.
+              🔄 Experienced in creating{' '}
+              <span className="text-orange-600">interactive web applications</span>{' '}
+              with <span className="text-orange-600">Streamlit</span> for ML model
+              deployment and visualization.
             </li>
             <li>
-              I have hands-on experience with a broad range of technologies:
+              🛠️ Skilled in modern{' '}
+              <span className="text-orange-600">AI development tools</span> like
+              Cursor, Warp Terminal, and Windsurf for efficient coding workflows.
+            </li>
+            <li>
+              I have hands-on experience with a comprehensive range of AI/ML
+              technologies:
             </li>
           </ul>
-          <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
-            <Section
-              title="Frontend"
-              gradientFrom="rgb(255,87,34)"
-              gradientTo="rgb(255,193,7)"
-              items={frontend}
-            />
-            <Section
-              title="Backend"
-              gradientFrom="rgb(76,175,80)"
-              gradientTo="rgb(139,195,74)"
-              items={backend}
-            />
-            <Section
-              title="Database & Cloud"
-              gradientFrom="rgb(33,150,243)"
-              gradientTo="rgb(3,169,244)"
-              items={databaseCloud}
-            />
+          <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div className="space-y-8">
+              <Section
+                title="Python & ML Stack"
+                gradientFrom="rgb(76,175,80)"
+                gradientTo="rgb(139,195,74)"
+                items={pythonStack}
+              />
+              <Section
+                title="AI Development Tools"
+                gradientFrom="rgb(255,87,34)"
+                gradientTo="rgb(255,193,7)"
+                items={mlTools}
+              />
+            </div>
+            <div className="space-y-8">
+              <Section
+                title="Deployment & Web"
+                gradientFrom="rgb(33,150,243)"
+                gradientTo="rgb(3,169,244)"
+                items={deploymentTools}
+              />
+              <Section
+                title="Databases"
+                gradientFrom="rgb(156,39,176)"
+                gradientTo="rgb(233,30,99)"
+                items={databases}
+              />
+            </div>
           </div>
         </div>
       </div>

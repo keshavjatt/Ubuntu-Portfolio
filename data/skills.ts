@@ -1,95 +1,110 @@
 import _ from 'lodash';
 
-export const frontend = [
+export const pythonStack = [
   {
     id: _.uniqueId(),
-    name: 'React',
+    name: 'Python',
     image:
-      'https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=white&labelColor=61DAFB&color=61DAFB',
+      'https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white&labelColor=3776AB&color=3776AB',
   },
   {
     id: _.uniqueId(),
-    name: 'Redux',
+    name: 'NumPy',
     image:
-      'https://img.shields.io/badge/-Redux-764ABC?style=flat&logo=redux&logoColor=white&labelColor=764ABC&color=764ABC',
+      'https://img.shields.io/badge/-NumPy-013243?style=flat&logo=numpy&logoColor=white&labelColor=013243&color=013243',
   },
   {
     id: _.uniqueId(),
-    name: 'Next.js',
+    name: 'Pandas',
     image:
-      'https://img.shields.io/badge/-Next.js-000000?style=flat&logo=next.js&logoColor=white&labelColor=000000&color=000000',
+      'https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas&logoColor=white&labelColor=150458&color=150458',
   },
   {
     id: _.uniqueId(),
-    name: 'TypeScript',
+    name: 'Matplotlib',
     image:
-      'https://img.shields.io/badge/-TypeScript-007ACC?style=flat&logo=typescript&logoColor=white&labelColor=007ACC&color=007ACC',
+      'https://img.shields.io/badge/-Matplotlib-11557C?style=flat&logo=matplotlib&logoColor=white&labelColor=11557C&color=11557C',
   },
   {
     id: _.uniqueId(),
-    name: 'HTML5',
+    name: 'Scikit-learn',
     image:
-      'https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white&labelColor=E34F26&color=E34F26',
+      'https://img.shields.io/badge/-Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white&labelColor=F7931E&color=F7931E',
   },
   {
     id: _.uniqueId(),
-    name: 'CSS3',
+    name: 'TensorFlow',
     image:
-      'https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white&labelColor=1572B6&color=1572B6',
+      'https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white&labelColor=FF6F00&color=FF6F00',
   },
   {
     id: _.uniqueId(),
-    name: 'Sass',
+    name: 'Keras',
     image:
-      'https://img.shields.io/badge/-Sass-CC6699?style=flat&logo=sass&logoColor=white&labelColor=CC6699&color=CC6699',
+      'https://img.shields.io/badge/-Keras-D00000?style=flat&logo=keras&logoColor=white&labelColor=D00000&color=D00000',
   },
   {
     id: _.uniqueId(),
-    name: 'Tailwind CSS',
+    name: 'Jupyter',
     image:
-      'https://img.shields.io/badge/-TailwindCSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white&labelColor=06B6D4&color=06B6D4',
-  },
-];
-
-export const backend = [
-  {
-    id: _.uniqueId(),
-    name: 'Node.js',
-    image:
-      'https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white&labelColor=339933&color=339933',
-  },
-  {
-    id: _.uniqueId(),
-    name: 'NestJS',
-    image:
-      'https://img.shields.io/badge/-NestJS-E0234E?style=flat&logo=nestjs&logoColor=white&labelColor=E0234E&color=E0234E',
-  },
-  {
-    id: _.uniqueId(),
-    name: 'Express.js',
-    image:
-      'https://img.shields.io/badge/-Express.js-000000?style=flat&logo=express&logoColor=white&labelColor=000000&color=000000',
-  },
-  {
-    id: _.uniqueId(),
-    name: 'REST API',
-    image:
-      'https://img.shields.io/badge/-REST_API-007ACC?style=flat&logo=swagger&logoColor=white&labelColor=007ACC&color=007ACC',
-  },
-  {
-    id: _.uniqueId(),
-    name: 'GraphQL',
-    image:
-      'https://img.shields.io/badge/-GraphQL-E10098?style=flat&logo=graphql&logoColor=white&labelColor=E10098&color=E10098',
+      'https://img.shields.io/badge/-Jupyter-F37626?style=flat&logo=jupyter&logoColor=white&labelColor=F37626&color=F37626',
   },
 ];
 
-export const databaseCloud = [
+export const mlTools = [
+  {
+    id: _.uniqueId(),
+    name: 'Cursor AI',
+    image:
+      'https://img.shields.io/badge/-Cursor_AI-000000?style=flat&logo=cursor&logoColor=white&labelColor=000000&color=000000',
+  },
+  {
+    id: _.uniqueId(),
+    name: 'Warp Terminal',
+    image:
+      'https://img.shields.io/badge/-Warp_Terminal-00B4D8?style=flat&logo=warp&logoColor=white&labelColor=00B4D8&color=00B4D8',
+  },
+];
+
+export const deploymentTools = [
+  {
+    id: _.uniqueId(),
+    name: 'Streamlit',
+    image:
+      'https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white&labelColor=FF4B4B&color=FF4B4B',
+  },
+  {
+    id: _.uniqueId(),
+    name: 'GitHub',
+    image:
+      'https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white&labelColor=181717&color=181717',
+  },
+  {
+    id: _.uniqueId(),
+    name: 'Vercel',
+    image:
+      'https://img.shields.io/badge/-Vercel-000000?style=flat&logo=vercel&logoColor=white&labelColor=000000&color=000000',
+  },
+  {
+    id: _.uniqueId(),
+    name: 'Render',
+    image:
+      'https://img.shields.io/badge/-Render-46E3B7?style=flat&logo=render&logoColor=white&labelColor=46E3B7&color=46E3B7',
+  },
+];
+
+export const databases = [
   {
     id: _.uniqueId(),
     name: 'MySQL',
     image:
       'https://img.shields.io/badge/-MySQL-4479A1?style=flat&logo=mysql&logoColor=white&labelColor=4479A1&color=4479A1',
+  },
+  {
+    id: _.uniqueId(),
+    name: 'PostgreSQL',
+    image:
+      'https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white&labelColor=336791&color=336791',
   },
   {
     id: _.uniqueId(),
@@ -99,14 +114,14 @@ export const databaseCloud = [
   },
   {
     id: _.uniqueId(),
-    name: 'Firebase',
+    name: 'SQLite',
     image:
-      'https://img.shields.io/badge/-Firebase-FFCA28?style=flat&logo=firebase&logoColor=white&labelColor=FFCA28&color=FFCA28',
+      'https://img.shields.io/badge/-SQLite-003B57?style=flat&logo=sqlite&logoColor=white&labelColor=003B57&color=003B57',
   },
   {
     id: _.uniqueId(),
-    name: 'Linux',
+    name: 'MSSQL',
     image:
-      'https://img.shields.io/badge/-Linux-FCC624?style=flat&logo=linux&logoColor=white&labelColor=E9500F&color=E9500F',
+      'https://img.shields.io/badge/-MSSQL-CC2927?style=flat&logo=microsoft-sql-server&logoColor=white&labelColor=CC2927&color=CC2927',
   },
 ];
