@@ -1,6 +1,11 @@
 import cls from 'classnames';
 
-import { pythonStack, mlTools, deploymentTools, databases } from '@/data/skills';
+import {
+  pythonStack,
+  mlTools,
+  deploymentTools,
+  databases,
+} from '@/data/skills';
 
 interface SectionProps {
   title: string;
@@ -12,16 +17,16 @@ interface SectionProps {
 const Section = ({ title, gradientFrom, gradientTo, items }: SectionProps) => {
   // Define gradient classes based on the section
   const getGradientClass = (from: string, to: string) => {
-    if (from === "rgb(76,175,80)" && to === "rgb(139,195,74)") {
-      return "bg-gradient-to-r from-green-500 to-green-400";
-    } else if (from === "rgb(255,87,34)" && to === "rgb(255,193,7)") {
-      return "bg-gradient-to-r from-orange-500 to-yellow-400";
-    } else if (from === "rgb(33,150,243)" && to === "rgb(3,169,244)") {
-      return "bg-gradient-to-r from-blue-500 to-cyan-400";
-    } else if (from === "rgb(156,39,176)" && to === "rgb(233,30,99)") {
-      return "bg-gradient-to-r from-purple-600 to-pink-500";
+    if (from === 'rgb(76,175,80)' && to === 'rgb(139,195,74)') {
+      return 'bg-gradient-to-r from-green-500 to-green-400';
+    } else if (from === 'rgb(255,87,34)' && to === 'rgb(255,193,7)') {
+      return 'bg-gradient-to-r from-orange-500 to-yellow-400';
+    } else if (from === 'rgb(33,150,243)' && to === 'rgb(3,169,244)') {
+      return 'bg-gradient-to-r from-blue-500 to-cyan-400';
+    } else if (from === 'rgb(156,39,176)' && to === 'rgb(233,30,99)') {
+      return 'bg-gradient-to-r from-purple-600 to-pink-500';
     }
-    return "bg-gradient-to-r from-blue-500 to-cyan-400";
+    return 'bg-gradient-to-r from-blue-500 to-cyan-400';
   };
 
   return (
@@ -30,7 +35,7 @@ const Section = ({ title, gradientFrom, gradientTo, items }: SectionProps) => {
         className={cls(
           'mb-2 text-xl font-extrabold text-transparent md:text-center',
           getGradientClass(gradientFrom, gradientTo),
-          'bg-clip-text'
+          'bg-clip-text',
         )}
       >
         {title}
@@ -61,32 +66,35 @@ const Skills = () => {
         <div className="-my-6">
           <ul className="mt-2 list-inside list-disc">
             <li>
-              🚀 My primary expertise lies in{' '}
+              My primary expertise lies in{' '}
               <span className="text-orange-600">Python</span> for{' '}
               <span className="text-orange-600">Machine Learning</span> and{' '}
               <span className="text-orange-600">Data Science</span>.
             </li>
             <li>
-              ⚡ I specialize in building{' '}
+              I specialize in building{' '}
               <span className="text-orange-600">end-to-end ML pipelines</span>,
               from data preprocessing to model deployment.
             </li>
             <li>
-              🧠 Proficient in{' '}
+              Proficient in{' '}
               <span className="text-orange-600">deep learning</span> with{' '}
               <span className="text-orange-600"> TensorFlow/Keras</span> for
               computer vision and neural network applications.
             </li>
             <li>
-              🔄 Experienced in creating{' '}
-              <span className="text-orange-600">interactive web applications</span>{' '}
-              with <span className="text-orange-600">Streamlit</span> for ML model
-              deployment and visualization.
+              xperienced in creating{' '}
+              <span className="text-orange-600">
+                interactive web applications
+              </span>{' '}
+              with <span className="text-orange-600">Streamlit</span> for ML
+              model deployment and visualization.
             </li>
             <li>
-              🛠️ Skilled in modern{' '}
+              Skilled in modern{' '}
               <span className="text-orange-600">AI development tools</span> like
-              Cursor, Warp Terminal, and Windsurf for efficient coding workflows.
+              Cursor, Warp Terminal, and Windsurf for efficient coding
+              workflows.
             </li>
             <li>
               I have hands-on experience with a comprehensive range of AI/ML
